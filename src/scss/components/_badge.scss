@@ -1,0 +1,13 @@
+.badge {
+    min-width: 2rem;
+    min-height: 1rem;
+    height: auto;
+    width: auto;
+    padding: map-get($spaces, '1');
+    margin: map-get($spaces, '1');
+    border-radius: $base-border-radius;
+
+    &.blue {
+        background-color: $brand-blue;
+    }
+}

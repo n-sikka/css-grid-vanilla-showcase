@@ -1,0 +1,14 @@
+.button {
+    min-width: 4rem;
+    min-height: 1.5rem;
+    border: 0;
+    border-radius: $base-border-radius;
+    @include box-shadow-default();
+    padding: map-get($spaces, '1') map-get($spaces, '2');
+    margin: map-get($spaces, '1') auto;
+    cursor: pointer;
+
+    &.blue {
+        @include button-variant($brand-blue);
+    }
+}

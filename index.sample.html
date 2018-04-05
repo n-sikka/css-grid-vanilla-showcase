@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Coffee :)</title>
+    <meta name="description" content="Simple HTML/SCSS Boilerplate">
+    <meta name="author" content="Nikhil Sikka">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="/src/scss//settings/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+
+    
+    <!-- inject:css -->
+    <!-- endinject -->
+    
+    <!-- <link rel="stylesheet" href="css/skeleton.css"> -->
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+    </head>
+    <body>
+        <nav class="navbar-container">
+            <img src="./assets/imgs/archii-dark-white.svg" height="100" width="100" alt="">
+        </nav>
+
+        <div class="container sm p-5">
+            <h4 class="color-primary text-center">This is an overview of all documents where Archii has been able to locate either a name of a person or a CPR number</h4>
+            <div class="content">
+                <div class="grid-container no-gutter">
+                    <div class="col-span-10">
+                        <h1 class="font-size-headline">High Risk Documents</h1>
+                    </div>
+                    <div class="col-span-1 text-center">
+                        <button class="button blue">
+                            <i class="color-brand-white fa fa-cloud"></i>
+                        </button>
+                    </div>
+                    <div class="col-span-1 text-center">
+                        <button class="button blue">
+                            <i class="color-brand-white fa fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container no-gutter">
+                <div class="col-span-4 full-on-mobile full-on-tablet no-margin-mobile mr-2 panel br">
+                    <h1 class="panel-heading m-0">
+                        High Risk Keywords
+                        <span class="tooltip-group">
+                            <i onmouseover="toggleTooltip()" onmouseout="toggleTooltip()" class="fa fa-info-circle color-brand-blue"></i>
+                            <div id="tooltipContainer" class="tooltip black top">
+                                <p class="font-size-sm">Archii considers a document a high GDPR risk if either a CPR number or sensitive keyword is found in it.</p>
+                            </div>
+                        </span>
+                        <span class="pull-right">
+                                <i class="fa clickable fa-chevron-down"></i>
+                        </span>
+                    </h1>
+                    <div class="panel-body">
+                        <ul class="list m-0">
+                            <li class="list-item clickable-item">
+                                CPR Number
+                            </li>
+                            <li class="list-item clickable-item">
+                                CPR Number, "cancer"
+                            </li>
+                            <li class="list-item clickable-item">
+                                "Depressive"
+                            </li>
+                            <li class="list-item clickable-item">
+                                "Homosexual"
+                            </li>
+                            <li class="list-item clickable-item">
+                                CPR Number, "Christianity"
+                            </li>
+                            <li class="list-item clickable-item">
+                                "Bulimia"
+                            </li>
+                            <li class="list-item clickable-item">
+                                "Sex"
+                            </li>
+                            <li class="list-item clickable-item">
+                                CPR Number, "Debt"
+                            </li>
+                            <li class="list-item clickable-item">
+                                CPR Number, "Homosexual"
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-span-3 full-on-mobile full-on-tablet panel br-l">
+                    <h1 class="panel-heading m-0">
+                        Persons
+                        <span class="pull-right text-right">
+                            <i class="fa clickable fa-chevron-down"></i>
+                        </span>
+                    </h1>
+                    <div class="panel-body">
+                            <ul class="list m-0">
+                                <li class="list-item clickable-item">
+                                    <span class="concat-text">CPR Number, Emplo..</span>
+                                    <span class="tooltip-group">
+                                        <span class="color-brand-blue font-size-md p-1" onmouseover="togglePopover()" onmouseout="togglePopover()">+</span>
+                                        <div id="popoverContainer" class="tooltip blue right">
+                                            <div class="tooltip-heading">
+                                                Current Employees
+                                            </div>  
+                                            <p class="font-size-list mb-3">Ulrik</p>
+                                            <div class="tooltip-heading">
+                                                Customers
+                                            </div>  
+                                            <p class="font-size-list mb-3">Jens</p>
+                                            <div class="tooltip-heading">
+                                                CPR Number
+                                            </div>  
+                                            <p class="font-size-list">Lars (020202-010101)</p>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li class="list-item clickable-item">
+                                    CPR Number
+                                </li>
+                                <li class="list-item clickable-item">
+                                    Employee
+                                </li>
+                                <li class="list-item clickable-item">
+                                    Employee
+                                </li>
+                                <li class="list-item clickable-item">
+                                    CPR Number, Customer
+                                </li>
+                                <li class="list-item clickable-item">
+                                    Other
+                                </li>
+                                <li class="list-item clickable-item">
+                                    Employee, Customer
+                                </li>
+                                <li class="list-item clickable-item">
+                                    CPR Number, Other
+                                </li>
+                                <li class="list-item clickable-item">
+                                    CPR Number, Employee
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-span-3 half-on-mobile half-on-tablet panel">
+                    <h1 class="panel-heading m-0">
+                        Names
+                        <span class="pull-right text-right">
+                            <i class="fa clickable fa-chevron-down"></i>
+                        </span>
+                    </h1>
+                    <div class="panel-body">
+                        <ul class="list m-0">
+                            <li class="list-item clickable-item">
+                                Soren Jaspersen
+                            </li>
+                            <li class="list-item clickable-item no-underline">
+                                <!-- This class will be added if the content is n/a or empty  -->
+                                -
+                            </li>
+                            <li class="list-item clickable-item">
+                                Peter
+                            </li>
+                            <li class="list-item clickable-item">
+                                Sune
+                            </li>
+                            <li class="list-item clickable-item">
+                                Lars, Ulrik, Svend
+                            </li>
+                            <li class="list-item clickable-item">
+                                Jens Jul
+                            </li>
+                            <li class="list-item clickable-item">
+                                Sune, Lars
+                            </li>
+                            <li class="list-item clickable-item">
+                                Claus Kaspersen
+                            </li>
+                            <li class="list-item clickable-item">
+                                Jesper Jonassen
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-span-1 quarter-on-mobile quarter-on-tablet panel">
+                    <h1 class="panel-heading m-0 text-center">
+                        <i class="fa fa-circle color-brand-white column-header-circle" aria-hidden="true"></i>
+                    </h1>
+                    <div class="panel-body">
+                        <ul class="list m-0">
+                            <li class="list-item">
+                                <label class="checkbox-container circle">
+                                    <span class="checkbox-inner">
+                                        <input class="checkbox1" type="checkbox" checked="checked" onchange="onCheckboxClicked(this)" id="colCheckBox">
+                                        <span class="checkmark ml-1"></span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <!-- This class  p-0will be added if the content is n/a or empty  -->
+                                <label class="checkbox-container circle">
+                                    <span class="checkbox-inner">
+                                        <input class="checkbox2" type="checkbox"  onchange="onCheckboxClicked(this)" id="colCheckBox">
+                                        <span class="checkmark ml-1"></span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <label class="checkbox-container circle">
+                                    <span class="checkbox-inner">
+                                        <input class="checkbox3" type="checkbox" onchange="onCheckboxClicked(this)" id="colCheckBox">
+                                        <span class="checkmark ml-1"></span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <label class="checkbox-container circle">
+                                    <span class="checkbox-inner">
+                                        <input class="checkbox4" type="checkbox" onchange="onCheckboxClicked(this)" id="colCheckBox">
+                                        <span class="checkmark ml-1"></span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <label class="checkbox-container circle">
+                                    <span class="checkbox-inner">
+                                        <input class="checkbox5" type="checkbox" onchange="onCheckboxClicked(this)" id="colCheckBox">
+                                        <span class="checkmark ml-1"></span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <label class="checkbox-container circle">
+                                    <span class="checkbox-inner">
+                                        <input class="checkbox6" type="checkbox" onchange="onCheckboxClicked(this)" id="colCheckBox">
+                                        <span class="checkmark ml-1"></span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <label class="checkbox-container circle">
+                                    <span class="checkbox-inner">
+                                        <input class="checkbox7" type="checkbox" onchange="onCheckboxClicked(this)" id="colCheckBox">
+                                        <span class="checkmark ml-1"></span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <label class="checkbox-container circle">
+                                    <span class="checkbox-inner">
+                                        <input class="checkbox8" type="checkbox" onchange="onCheckboxClicked(this)" id="colCheckBox">
+                                        <span class="checkmark ml-1"></span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <label class="checkbox-container circle">
+                                    <span class="checkbox-inner">
+                                        <input class="checkbox9" type="checkbox" onchange="onCheckboxClicked(this)" id="colCheckBox">
+                                        <span class="checkmark ml-1"></span>
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-span-1 quarter-on-mobile quarter-on-tablet panel br-r">
+                    <h1 class="panel-heading m-0 text-center">
+                        <i class="fa clickable fa-chevron-down"></i>
+                    </h1>
+                    <div class="panel-body">
+                        <ul class="list m-0">
+                            <li class="list-item hourglass-container text-center">
+                                <div class="p-1 hourglass visible" id="hourglass1">
+                                    <i class="fa fa-hourglass-end"></i>
+                                </div>
+                            </li>
+                            <li class="list-item hourglass-container text-center">
+                                <div class="p-1 hourglass" id="hourglass2">
+                                    <i class="fa fa-hourglass-end"></i>
+                                </div>
+                            </li>
+                            <li class="list-item hourglass-container text-center">
+                                <div class="p-1 hourglass" id="hourglass3">
+                                    <i class="fa fa-hourglass-end"></i>
+                                </div>
+                            </li>
+                            <li class="list-item hourglass-container text-center">
+                                <div class="p-1 hourglass" id="hourglass4">
+                                    <i class="fa fa-hourglass-end"></i>
+                                </div>
+                            </li>
+                            <li class="list-item hourglass-container text-center">
+                                <div class="p-1 hourglass" id="hourglass5">
+                                    <i class="fa fa-hourglass-end"></i>
+                                </div>
+                            </li>
+                            <li class="list-item hourglass-container text-center">
+                                <div class="p-1 hourglass" id="hourglass6">
+                                    <i class="fa fa-hourglass-end"></i>
+                                </div>
+                            </li>
+                            <li class="list-item hourglass-container text-center">
+                                <div class="p-1 hourglass" id="hourglass7">
+                                    <i class="fa fa-hourglass-end"></i>
+                                </div>
+                            </li>
+                            <li class="list-item hourglass-container text-center">
+                                <div class="p-1 hourglass" id="hourglass8">
+                                    <i class="fa fa-hourglass-end"></i>
+                                </div>
+                            </li>
+                            <li class="list-item hourglass-container text-center">
+                                <div class="p-1 hourglass" id="hourglass9">
+                                    <i class="fa fa-hourglass-end"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/src/js/main.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,39 @@
+.list {
+    padding: 0;
+
+    .list-item {
+        padding: map-get($spaces, '1') map-get($spaces, '2');
+        display: block;
+        list-style: none;
+        border-bottom: 1px solid $brand-grey;
+        font-size: $font-list-size;
+        font-weight: 600;
+        text-decoration: underline;
+        height: 2rem;
+        
+        .concat-text {
+            font-size: $font-list-size;
+        }
+
+        &.no-underline {
+            text-decoration: none;
+        }
+        
+        &.clickable-item {
+            cursor: pointer;
+            
+            &:hover, 
+            &:active {
+                background-color: $brand-white;
+            }
+        }
+
+        &:nth-child(1) {
+            margin-top: -map-get($spaces, '1');
+        }
+
+        &:nth-last-child(1) {
+            border-bottom: 0;
+        }
+    } 
+}

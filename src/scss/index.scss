@@ -1,0 +1,13 @@
+@import './settings/variables';
+@import './settings/mixins';
+@import './settings/base';
+
+
+.bg-black {
+    background-color: $brand-black;
+}
+
+.bg-blue {
+    background-color: $brand-blue;
+}
+

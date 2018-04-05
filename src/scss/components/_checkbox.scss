@@ -1,0 +1,53 @@
+.checkbox-container {
+    display: block;
+    position: relative;
+    margin-bottom: map-get($spaces, '2');
+    cursor: pointer;
+    font-size: $font-md-size;
+
+    &:hover input ~ .checkmark {
+        // on checkbox hover
+        background-color: $brand-grey;
+    }
+
+    input:checked ~ .checkmark {
+        // on check clicked
+        background-color: $brand-blue;
+
+        &:after {
+            display: block;
+        }
+    }    
+
+    input {
+        position: relative;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .checkmark {
+        border: 1px solid $brand-grey;
+        position: absolute;
+        top: -5px;
+        left: 0;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+
+            left: 8px;
+            top: 6px;
+            width: 4px;
+            height: 8px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+        }
+    }
+    
+
+}

@@ -1,0 +1,64 @@
+$base-font-size: 16px;
+
+// from styleguide
+
+$font-headline-size: 20px;
+$font-list-size: 11px;
+$font-md-size: 15px;
+$font-sm-size: 10px;
+$font-xs-size: 9px;
+
+$primary-font-color: #333333;
+$secondary-font-color: #787878;
+
+
+$brand-black: #333333;
+$brand-green: #06A700;
+$brand-yellow: #EDB600;
+$brand-blue: #00ACF1;
+$brand-white: #F8F8F8;
+$brand-grey: #EAEAEA;
+$brand-dark-grey: $secondary-font-color;
+
+$navbar-blue: #181734;
+
+$primary-font-family: 'Lato', sans-serif;
+
+
+// Utilities
+$container-width-default: 96%;
+
+$container-size-map: (
+    'xl': 2560px,
+    'lg': 1920px,
+    'md': 1400px,
+    'sm': 1024px,
+    'xs': 720px
+);
+
+$base-border-radius: 0.25rem;
+
+$base-space: 0.5rem;
+
+$spaces: (
+    '0': 0rem,
+    '1': $base-space*1,
+    '2': $base-space*2,
+    '3': $base-space*3,
+    '4': $base-space*4,
+    '5': $base-space*5,
+    '6': $base-space*6
+);
+
+
+$default-grid-gap: 0.5rem;
+$default-grid-columns: 12;
+
+$columns: 1 2 3 4 5 6 7 8 9 10 11 12;
+
+
+// Screen sizes
+$mobile: 425px;
+$tablet: 768px;
+$desktop: 1400px;
+$super-desktop: 1920px;

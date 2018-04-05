@@ -1,0 +1,39 @@
+{
+  "name": "coffee",
+  "version": "0.0.1",
+  "description": "Simple HTML/CSS/Gulp framework",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scss",
+    "css",
+    "framework"
+  ],
+  "author": "nikhil",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "eslint": "^2.12.0",
+    "event-stream": "^3.3.2",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.5.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-sass-lint": "^1.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7"
+  }
+}

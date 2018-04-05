@@ -1,0 +1,17 @@
+.panel {
+    border: solid 1px darken($brand-grey, 10%); 
+
+    .panel-heading {
+        min-height: 2.2rem;
+        background-color: $brand-white;
+        color: $secondary-font-color;
+        font-size: $font-md-size;
+        padding: map-get($spaces, '1') map-get($spaces, '2');
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    .panel-body {
+        
+    }
+}

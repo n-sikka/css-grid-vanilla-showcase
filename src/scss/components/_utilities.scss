@@ -1,0 +1,153 @@
+.container {
+    width: $container-width-default;
+    margin: 0 auto;
+
+    @each $container-size-label, $container-size-value in $container-size-map {
+        &.#{$container-size-label} {
+            max-width: $container-size-value;
+        }
+    }
+}
+
+
+// Paddings and margin classes
+@each $space-label, $space-value in $spaces {
+    .p-#{$space-label} {
+        padding: $space-value !important;
+    }
+
+    .pr-#{$space-label} {
+        padding-right: $space-value !important;
+    }
+
+    .pl-#{$space-label} {
+        padding-left: $space-value !important;
+    }
+
+    .m-#{$space-label} {
+        margin: $space-value !important;
+    }
+
+    .mr-#{$space-label} {
+        margin-right: $space-value !important;
+    }
+
+    .ml-#{$space-label} {
+        margin-left: $space-value !important;
+    }
+
+    .mb-#{$space-label} {
+        margin-bottom: $space-value !important;
+    }
+}
+
+.no-margin-mobile {
+    @include for-screen('mobile') {
+        margin: 0!important;
+    }
+}
+
+.ba-grey {
+    border: 1px solid $brand-grey;
+}
+
+.br {
+    border-radius: $base-border-radius;
+}
+
+.br-l {
+    border-bottom-left-radius: $base-border-radius;
+    border-top-left-radius: $base-border-radius;
+}
+
+.br-r {
+    border-bottom-right-radius: $base-border-radius;
+    border-top-right-radius: $base-border-radius;
+}
+
+.font-size-headline {
+    font-size: $font-headline-size;
+}
+
+.font-size-list {
+    font-size: $font-list-size;
+}
+
+.font-size-md {
+    font-size: $font-md-size;
+}
+
+.font-size-sm {
+    font-size: $font-sm-size;
+}
+
+.font-size-xs {
+    font-size: $font-xs-size;
+}
+
+.color-brand-white {
+    color: $brand-white;
+}
+
+.color-brand-blue {
+    color: $brand-blue;
+}
+
+.color-brand-black {
+    color: $brand-black;
+}
+
+.color-brand-green {
+    color: $brand-green;
+}
+
+.color-brand-yellow {
+    color: $brand-yellow;
+}
+
+.color-brand-grey {
+    color: $brand-grey;
+}
+
+.color-primary {
+    color: $primary-font-color;
+}
+
+.color-secondary {
+    color: $secondary-font-color;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+
+.width-100 {
+    width: auto;
+}
+
+.concat-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
